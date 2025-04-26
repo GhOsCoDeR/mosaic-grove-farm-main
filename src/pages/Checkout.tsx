@@ -365,7 +365,7 @@ const Checkout = () => {
                       <div key={item.product.id} className="flex items-center space-x-4">
                         <div className="w-16 h-16 flex-shrink-0 bg-gray-100 rounded-md overflow-hidden">
                           <img
-                            src={item.product.image_url || item.product.image}
+                            src={item.product.image_url}
                             alt={item.product.name}
                             className="w-full h-full object-cover"
                           />
