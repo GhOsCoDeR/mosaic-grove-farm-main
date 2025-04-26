@@ -1,0 +1,74 @@
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Button Styles */
+.btn-primary {
+  display: inline-block;
+  background-color: #3a6351; /* mosaic-green */
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2c4c3b; /* mosaic-green-dark */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #3a6351; /* mosaic-green */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headers */
+.section-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: serif;
+  color: #2c4c3b; /* mosaic-green-dark */
+  margin-bottom: 1.5rem;
+}
+
+.section-subheading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: serif;
+  color: #3a6351; /* mosaic-green */
+  margin-bottom: 1rem;
+}

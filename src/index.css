@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 20 14.3% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+
+    --primary: 115 20% 40%;
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 60 33% 96.1%;
+    --secondary-foreground: 24 9.8% 10%;
+
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+
+    --accent: 40 40% 80%;
+    --accent-foreground: 24 9.8% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 115 20% 40%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 60 30% 96.1%;
+    --sidebar-foreground: 20 14.3% 4.1%;
+    --sidebar-primary: 120 16.7% 40%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 60 4.8% 95.9%;
+    --sidebar-accent-foreground: 24 9.8% 10%;
+    --sidebar-border: 20 5.9% 90%;
+    --sidebar-ring: 115 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .hero-section {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-serif font-bold text-mosaic-green-dark mb-4;
+  }
+  
+  .section-subheading {
+    @apply text-xl md:text-2xl font-serif font-semibold text-mosaic-green mb-3;
+  }
+
+  .btn-primary {
+    @apply bg-mosaic-green text-white px-6 py-3 rounded-md hover:bg-mosaic-green-dark transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-mosaic-earth text-mosaic-green-dark px-6 py-3 rounded-md hover:bg-mosaic-earth-dark hover:text-white transition-colors duration-300;
+  }
+}
